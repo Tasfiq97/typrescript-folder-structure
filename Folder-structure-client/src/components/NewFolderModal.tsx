@@ -52,7 +52,7 @@ export const NewFolderModal = ({closeModal,id}:propsType) => {
         isFolder:true,
         items:[]
        }
-        const result= axios.put("http://localhost:5000/folder",data).then(res=>{
+        const result= axios.put("https://folder-backend-tau.vercel.app/folder",data).then(res=>{
             if(res.status){
                setSuccess("successfully created");
                setInterval(()=>{

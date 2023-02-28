@@ -37,7 +37,7 @@ const Container=styled.div`
 function App() {
   const [data,setData]=useState([]);
   useEffect(()=>{
-    axios.get("http://localhost:5000/folders").then(data=>setData(data.data.data));
+    axios.get("https://folder-backend-tau.vercel.app/folders").then(data=>setData(data.data.data));
 
   },[data])
   

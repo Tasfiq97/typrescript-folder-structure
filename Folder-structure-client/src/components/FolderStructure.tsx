@@ -85,7 +85,7 @@ const FolderStructure = ({ list,ids }: listProps) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/folders")
+      .get("https://folder-backend-tau.vercel.app/folders")
       .then((data) => data.data.data.map((data: listProps2) => setData(data)));
   }, []);
   const openModal = () => {

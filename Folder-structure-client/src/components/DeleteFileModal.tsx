@@ -42,7 +42,7 @@ const DeleteFileModal = ({closeDelModal,id}:propsType) => {
      items:[]
     }
     
-     const result= axios.put("http://localhost:5000/delete",data).then(res=>{
+     const result= axios.put("https://folder-backend-tau.vercel.app/delete",data).then(res=>{
       if(res.status){
          setSuccess("successfully deleted");
           setInterval(()=>{
